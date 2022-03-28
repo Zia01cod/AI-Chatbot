@@ -1,0 +1,92 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+  <category>
+      <pattern>HELLO</pattern>
+      <template>
+          Well, hello!
+      </template>
+  </category>
+
+  <category>
+    <pattern>HI *</pattern>
+    <template>
+      <srai>HELLO</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>HI</pattern>
+    <template>
+      <srai>HELLO</srai>
+    </template>
+  </category>
+
+
+
+  <category>
+    <pattern>HELLO *</pattern>
+    <template>
+      <srai>HELLO</srai>
+    </template>
+  </category>
+
+
+  <category>
+    <pattern>BYE</pattern>
+      <template>
+        <random>
+          <li>Bye</li>
+          <li>Goodbye</li>
+          <li>Bye bye</li>
+          <li>Bye for now</li>
+          <li>See you later <get name="name"/></li>
+          <li>Thanks for chatting <get name="name"/></li>
+        </random>
+      </template>
+    </category>
+
+  <category>
+    <pattern>* BYE</pattern>
+    <template>
+      <srai>BYE</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>BYE *</pattern>
+    <template>
+      <srai>BYE</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* BYE *</pattern>
+    <template>
+      <srai>BYE</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>GOODBYE</pattern>
+    <template>
+      <srai>BYE</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* GOODBYE</pattern>
+    <template>
+      <srai>BYE</srai>
+    </template>
+  </category>
+
+
+    <category>
+      <pattern>GOODBYE *</pattern>
+      <template>
+        <srai>BYE</srai>
+      </template>
+    </category>
+
+
+</aiml>

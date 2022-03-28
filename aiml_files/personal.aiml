@@ -1,0 +1,282 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+  <category>
+    <pattern>MY NAME IS *</pattern>
+      <template>
+        <think>
+        <set name="name"><star/></set>
+      </think>
+        <random>
+          <li>How are you,<get name="name"/></li>
+          <li>Pleased to meet you,<get name="name"/></li>
+          <li>Hello,<get name="name"/></li>
+          <li>Cool name</li>
+          <li>You must be as unique as your name</li>
+        </random>
+      </template>
+  </category>
+
+
+
+  <category>
+    <pattern>BOT NAME</pattern>
+    <template>
+      My name is IfElseBot
+    </template>
+  </category>
+
+  <category>
+    <pattern>* YOUR NAME *</pattern>
+    <template>
+      <srai>BOT NAME</srai>
+    </template>
+  </category>
+
+
+    <category>
+      <pattern>* YOUR NAME</pattern>
+      <template>
+        <srai>BOT NAME</srai>
+      </template>
+    </category>
+
+
+  <category>
+    <pattern>* CALL YOU *</pattern>
+    <template>
+      <srai>BOT NAME</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* CALL YOU</pattern>
+    <template>
+      <srai>BOT NAME</srai>
+    </template>
+  </category>
+
+
+  <category>
+    <pattern>BOT INFO</pattern>
+    <template>I am fine</template>
+  </category>
+
+  <category>
+    <pattern>HOW ARE YOU</pattern>
+    <template>
+      <srai>BOT INFO</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>HOW IS IT GOING</pattern>
+    <template>
+      <srai>BOT INFO</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* YOU FEELING *</pattern>
+    <template>
+      <srai>BOT INFO</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* YOU FEELING</pattern>
+    <template>
+      <srai>BOT INFO</srai>
+    </template>
+  </category>
+
+
+
+
+  <category>
+    <pattern>I AM SAD</pattern>
+    <template>
+      <random>
+        <li>Well, don't be</li>
+        <li>How can I cheer you up?</li>
+        <li>Why are you sad?</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* I AM SAD</pattern>
+    <template>
+      <srai>I AM SAD</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>I AM SAD *</pattern>
+    <template>
+      <srai>I AM SAD</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* I AM * SAD *</pattern>
+    <template>
+      <srai>I AM SAD</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* I AM * SAD</pattern>
+    <template>
+      <srai>I AM SAD</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>I AM * SAD *</pattern>
+    <template>
+      <srai>I AM SAD</srai>
+    </template>
+  </category>
+
+
+
+  <category>
+    <pattern>* CREATED YOU</pattern>
+    <template>
+      I was created by Nikhil Iyer, Nitish Ravishankar and Anirudh Srinivasan as part of an Artificial Intelligence course assignment
+    </template>
+  </category>
+
+  <category>
+    <pattern>I AM HAPPY</pattern>
+    <template>
+      <random>
+        <li>Good for you</li>
+        <li>Great!</li>
+        <li>Being happy is crucial for a healthy life</li>
+        <li>That's the spirit!!!</li>
+      </random>
+    </template>
+  </category>
+
+    <category>
+      <pattern>* I AM HAPPY *</pattern>
+      <template>
+          <srai>I AM HAPPY</srai>
+      </template>
+    </category>
+
+
+    <category>
+      <pattern>* I AM HAPPY</pattern>
+        <template>
+          <srai>I AM HAPPY</srai>
+      </template>
+    </category>
+
+      <category>
+        <pattern>I AM HAPPY *</pattern>
+        <template>
+            <srai>I AM HAPPY</srai>
+        </template>
+      </category>
+
+      <category>
+        <pattern>* I AM * HAPPY *</pattern>
+          <template>
+            <srai>I AM HAPPY</srai>
+        </template>
+      </category>
+
+      <category>
+        <pattern>* I AM * HAPPY</pattern>
+          <template>
+            <srai>I AM HAPPY</srai>
+        </template>
+      </category>
+
+
+      <category>
+        <pattern>I AM * HAPPY *</pattern>
+          <template>
+            <srai>I AM HAPPY</srai>
+        </template>
+      </category>
+
+
+  <category>
+    <pattern>* MY DAY *</pattern>
+    <template>
+
+      <random>
+
+        <li>It will be as bright as the sun</li>
+        <li>It will definitely be better than yesterday</li>
+        <li>You might find today to be the best day you have ever had</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* AM FEELING *</pattern>
+    <template>
+      <random>
+        <li>I don't know what to say</li>
+        <li>If it's a bad thing, please consult a doctor</li>
+        <li>I cannot respond emotionally to such queries</li>
+        <li>Please tell me what it means to feel how you are feeling right now</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>I LIVE IN *</pattern>
+    <template>
+      <think>
+        <set name="home_city"><star/></set>
+      </think>
+      <random>
+      	<li>Beautiful place</li>
+      	<li>It is a great place</li>
+      	<li>Oh that's cool</li>
+      	<li>Nice, that's a great place to live</li>
+  	  </random>
+    </template>
+  </category>
+
+
+  <category>
+    <pattern>BOT ACTIVITIES</pattern>
+    <template>
+      <random>
+        <li>I love to chat with people</li>
+        <li>Bots are only trained to respond to user queries</li>
+        <li>Nothing much.Just chilling</li>
+        <li>I like to know more about the various users who chat with me</li>
+      </random>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* PASS YOUR TIME</pattern>
+    <template>
+      <srai>BOT ACTIVITIES</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* YOU ENJOY</pattern>
+    <template>
+      <srai>BOT ACTIVITIES</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>* FREE TIME</pattern>
+    <template>
+      <srai>BOT ACTIVITIES</srai>
+    </template>
+  </category>
+
+
+</aiml>

@@ -1,0 +1,86 @@
+<aiml version="1.0.1" encoding="UTF-8">
+   <category>
+    <pattern>How is the weather</pattern>
+    <template>
+      <random>
+        <li>Just a sec</li>
+        <li>Getting fresh updates</li>
+        <li>Searching...</li>
+      </random>
+      <think>
+        <set name="ctype">5</set>
+      </think>
+    </template>
+  </category>
+
+  <category>
+    <pattern>WHAT IS THE WEATHER IN *</pattern>
+    <template>
+      <random>
+        <li>Just a sec</li>
+        <li>Getting fresh updates</li>
+        <li>Searching...</li>
+      </random>
+      <think>
+        <set name="city"><star/></set>
+        <set name="ctype">6</set>
+      </think>
+    </template>
+  </category>
+
+
+  <category>
+    <pattern>NEWS</pattern>
+      <template>
+      Let me check that for you
+        <think>
+          <set name="ctype">10</set>
+          <set name="news"></set>
+        </think>
+      </template>
+  </category>
+
+  <category>
+    <pattern>GET THE LATEST NEWS</pattern>
+      <template>
+        <srai>NEWS</srai>
+      </template>
+  </category>
+
+  <category>
+    <pattern>NEWS ABOUT</pattern>
+      <template>
+      Let me check that for you
+        <think>
+          <set name="ctype">10</set>
+        </think>
+      </template>
+  </category>
+
+  <category>
+    <pattern>GET ME NEWS ABOUT *</pattern>
+    <template>
+      <srai>NEWS ABOUT <star index="1"/></srai>
+      <think><set name="news"><star index="1"/></set></think>
+    </template>
+  </category>
+
+  <category>
+    <pattern>NEWS ABOUT INDIA</pattern>
+      <template>
+      Let me check that for you
+        <think>
+          <set name="ctype">9</set>
+          <set name="news"></set>
+        </think>
+      </template>
+  </category>
+
+  <category>
+    <pattern>GET ME THE LATEST NEWS IN INDIA</pattern>
+      <template>
+        <srai>NEWS INDIA</srai>
+      </template>
+  </category>
+
+</aiml>
